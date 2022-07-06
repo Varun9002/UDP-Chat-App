@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UDP Chat</string>
+    <string name="hint_ip">Server IP Address</string>
+    <string name="hint_name">UserName</string>
+    <string name="app_title">UDP Chat</string>
+    <string name="start">Start</string>
+</resources>

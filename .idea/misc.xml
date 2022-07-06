@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.143" />
+        <entry key="app/src/main/res/drawable-v24/login_in.xml" value="0.143" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1295" />
+        <entry key="app/src/main/res/drawable/msg_in.xml" value="0.143" />
+        <entry key="app/src/main/res/drawable/rec_msg.xml" value="0.143" />
+        <entry key="app/src/main/res/drawable/sender_msg.xml" value="0.143" />
+        <entry key="app/src/main/res/drawable/sent_msg.xml" value="0.143" />
+        <entry key="app/src/main/res/font/biryani.xml" value="0.2630769230769231" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_msg_box.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/msg_item.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/rec_msg_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/rec_msg_layout.xml.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/sent_msg_layout.xml" value="0.2598958333333333" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1295" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1295" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
