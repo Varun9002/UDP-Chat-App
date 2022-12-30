@@ -54,7 +54,7 @@ class MsgBoxActivity : AppCompatActivity() {
             }
             else{
                 val sendBuf=(username+TOKEN_SPACE+inMsg).toByteArray()
-                socket.send(DatagramPacket(sendBuf,sendBuf.size,iPAdd,9876))
+                socket.send(DatagramPacket(sendBuf,sendBuf.size,iPAdd,53123))
                 msgList.add(Msg(username,inMsg,1))
                 adapter.notifyDataSetChanged()
                 editTextMsg.editableText.clear()
@@ -64,7 +64,7 @@ class MsgBoxActivity : AppCompatActivity() {
         }
 
         //  Thread for receiving the packets
-        Thread(Runnable {
+        Thread{
             while(true){
                 val receivebuffer = ByteArray(1024)
                 val recvdpkt = DatagramPacket(receivebuffer, receivebuffer.size)
@@ -81,7 +81,7 @@ class MsgBoxActivity : AppCompatActivity() {
                     break
                 }
             }
-        }).start()
+        }.start()
 
     }
 

@@ -1,13 +1,8 @@
 package com.example.udpchat
 
-import android.animation.StateListAnimator
 import android.content.Intent
 import android.os.Bundle
-import android.transition.Fade
-import android.util.Log
 import android.view.View
-import android.view.animation.Animation
-import android.view.animation.DecelerateInterpolator
 import android.view.animation.LinearInterpolator
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -61,15 +56,15 @@ class MainActivity : AppCompatActivity() {
     }
     private fun connect(user:String, ip:String){
         val ipAdd=InetAddress.getByName(ip)
-        val socket:DatagramSocket=DatagramSocket()
-        var flag=false
+        val socket=DatagramSocket()
+//        var flag=false
 
-        val t=Thread(Runnable {
+        val t=Thread{
             try {
-                var buf=(TokenConsts.TOKEN_LOGIN+user).toByteArray()
-                socket.send(DatagramPacket(buf,buf.size,ipAdd,9876))
+                val buf=(TokenConsts.TOKEN_LOGIN+user).toByteArray()
+                socket.send(DatagramPacket(buf,buf.size,ipAdd,53123))
                 socket.soTimeout=10000
-                var recbuf=ByteArray(1024)
+                val recbuf=ByteArray(1024)
                 val rec=DatagramPacket(recbuf,recbuf.size)
                 socket.receive(rec)
                 if (String(rec.data).contains(TokenConsts.TOKEN_ACK)){
@@ -92,7 +87,7 @@ class MainActivity : AppCompatActivity() {
                     progBar.visibility=View.GONE
                 }
             }
-        })
+        }
         t.start()
     }
 }
